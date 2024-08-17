@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: #ff7979;
+  background-image: url("./images/bg-intro-mobile.png");
+}
+
+/* ==================== 
+ HERO SECTION
+ ==================== */
+.hero-section {
+  text-align: center;
+  margin: 5.5rem auto 4rem;
+  width: 87.2%;
+  max-width: 33.75rem;
+  color: #fff;
+}
+
+.hero-section h1 {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: -0.292px;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+/* ==================== 
+ FORM SECTION
+ ==================== */
+.form-section {
+  width: 87.2%;
+  max-width: 33.75rem;
+  margin: 0 auto 4rem;
+}
+
+/* ===== CTA ===== */
+.form-section .cta {
+  color: #fff;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.268px;
+  border-radius: 0.625rem;
+  background: #5e54a4;
+  box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, 0.15);
+  padding: 1.125rem 20%;
+  margin-bottom: 1.5rem;
+}
+
+.form-section .cta em {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ===== FORM ===== */
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+
+/* ===== FORM INPUTS ===== */
+.form-section form input {
+  color: #3d3b48;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem;
+  letter-spacing: 0.25px;
+  border-radius: 0.3125rem;
+  border: 1px solid #dedede;
+  background: #fff;
+  padding: 0.9375rem 1.1875rem;
+  width: 100%;
+}
+
+.form-section form input:focus {
+  outline: 1px solid #5e54a4;
+}
+
+.form-section form input::placeholder {
+  opacity: 0.75;
+}
+
+/* ===== ERROR STYLES ===== */
+.form-section form input.error,
+.form-section form input.error:focus {
+  color: #ff7979;
+  outline: 1px solid #ff7979;
+}
+
+.form-section form input.error::placeholder {
+  color: #ff7979;
+}
+
+/* ===== ADD ERROR ICON ===== */
+.input-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-container:has(input.error)::after {
+  content: url("./images/icon-error.svg");
+  position: absolute;
+  top: 1rem;
+  right: 1.0625rem;
+  pointer-events: none; /* Ensures the icon does not interfere with user interaction */
+}
+
+/* ===== ERROR LABEL ===== */
+.form-section form .error-label {
+  color: #ff7979;
+  text-align: right;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0.375rem;
+  display: none;
+}
+
+/* ===== FORM SUBMIT BTN ===== */
+.form-section form .submit-btn {
+  color: #fff;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  background: #38cc8b;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+  padding: 0.9375rem 13.5%;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FORM SMALL PRINT ===== */
+.form-section form small {
+  color: #bab7d4;
+  text-align: center;
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  margin: 0 0.9375rem;
+}
+
+.form-section form small a {
+  text-decoration: none;
+  color: #ff7979;
+  font-weight: 700;
+}
+
+/* ====================
+ MEDIA QUERIES
+ =================== */
+@media (min-width: 48rem) {
+  /* ==================== 
+  HERO SECTION
+  ==================== */
+  .hero-section {
+    margin-bottom: 2rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.4375rem;
+    letter-spacing: -0.521px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    padding: 0 11.4583333333%;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+  }
+  /* ==================== 
+  HERO SECTION
+  ==================== */
+  .hero-section {
+    text-align: left;
+    margin: 0 4.05405405405% 0 0;
+    width: 47.2972972973%;
+    max-width: unset;
+  }
+
+  /* ==================== 
+   FORM SECTION
+   ==================== */
+  .form-section {
+    width: 48.6486486486%;
+    max-width: unset;
+    margin: 0;
+  }
+
+  /* ===== CTA ===== */
+  .form-section .cta {
+    padding: 1.0625rem 0;
+  }
+
+  .form-section .cta em {
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* ===== FORM ===== */
+  .form-section form {
+    padding: 2.5rem;
+  }
+
+  /* ===== FORM INPUTS ===== */
+  .form-section form input {
+    padding: 0.9375rem 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  /* ===== ERROR LABEL ===== */
+  .form-section form .error-label {
+    margin-top: -0.375rem;
+  }
+
+  /* ===== FORM SUBMIT BTN ===== */
+  .form-section form .submit-btn {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form-section form .submit-btn:hover,
+  .form-section form .submit-btn:focus {
+    background-color: #77e2b3;
+  }
+
+  /* ===== FORM SMALL PRINT ===== */
+  .form-section form small {
+    margin: 0;
+  }
+
+  .form-section form small a {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form-section form small a:hover,
+  .form-section form small a:focus {
+    opacity: 0.75;
+  }
+}
